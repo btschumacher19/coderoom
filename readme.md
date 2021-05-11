@@ -1,4 +1,4 @@
-# CodeRoom
+# [CodeRoom](https://coderoom.us/)
 
 CodeRoom is a project aimed at improving the learning experience for new developers. Created by four coding bootcamp graduates who saw a need for quick access to IDE's with preloaded coding challenges or lessons that could be worked in by groups or individuals in real-time in a remote setting.
 
@@ -19,10 +19,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [CodeMirror](https://codemirror.net/)
 - [Judge0](https://judge0.com/)
 - [uuidv4](https://www.npmjs.com/package/uuidv4)
+- [Docker](https://www.docker.com/get-started)
+- [Google Compute Engine](https://cloud.google.com/compute)
 
 ## Backend
 
-The backend for CodeRoom was built as a convenient REST API using Python and PostgreSQL. It handles user authentication, authorization, and data storage. The repository for the backend can be found [here](https://github.com/novemberplatoon/coderoom-backend).
+The backend for CodeRoom was built as a convenient REST API using Python and PostgreSQL. It handles user authentication, authorization, and data storage.
 
 ## Authors
 
