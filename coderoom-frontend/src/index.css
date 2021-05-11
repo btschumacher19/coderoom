@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+body, html, #root {
+  margin: 0;
+  Font-Family: 'Cabin', Sans-Serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: fit-content;
+}
+
+h1, h2, h3 {
+  Font-Family: 'Roboto Condensed', Sans-Serif;
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  border-radius: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:horizontal,
+::-webkit-scrollbar:horizontal
+  {
+  opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
