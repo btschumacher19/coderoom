@@ -46,7 +46,11 @@ function ChallengeSubmitted({contributers, challengeTitle}) {
 
   const displayContributingUsers = () => {
     return contributers.map((student, i) => {
-      return <span key={i}>{student} </span>
+      if(i < contributers.length -1){
+        return <span key={i}>{student}, </span>
+      }else{
+        return <span key={i}>and {student}</span>
+      }
     })
   }
   

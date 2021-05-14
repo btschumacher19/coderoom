@@ -58,11 +58,11 @@ const Controls = ({tracks, setStart, setInCall, useClient}) => {
 
   return (
     <ControlsPanel>
-      <StyledButton variant="outlined" color={trackState.audio ? "primary" : "inherit"} 
+      <StyledButton variant="outlined" style={{ color: trackState.audio ? "#347FC4" : "#ff5c33"}} 
         onClick={() => mute("audio")} size='large' width='100%'>
         {trackState.audio ? <MicIcon />: <MicOffIcon />}
       </StyledButton >
-      <StyledButton variant="outlined" color={trackState.video ? "primary" : "inherit"} 
+            <StyledButton variant="outlined" style={{color: trackState.video ? "#347FC4" : "#ff5c33"}} 
         onClick={() => mute("video")}  size='large' width='100%'>
         {trackState.video ? <VideocamIcon /> : <VideocamOffIcon/>}
       </StyledButton >

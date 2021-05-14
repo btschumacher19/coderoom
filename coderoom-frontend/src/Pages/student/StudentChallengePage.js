@@ -3,13 +3,9 @@ import {useParams} from 'react-router-dom'
 
 import styled, { css }  from 'styled-components';
 import { Typography} from '@material-ui/core';
-// import { AccountCircle, Visibility, VisibilityOff } from '@material-ui/icons';
-
 
 import {Compiler, StudentSignInModal, ChallengeSubmitted, ChallengeLocked, ChallengeLoader, DoesNotExist, VideoChat} from '../../Components/_index'
 import {fetchDetail} from '../../APIs/helperFunctions'
-
-
 
 const API_KEY_FB = process.env.REACT_APP_FIREBASE_API_KEY
 const URL_FB = process.env.REACT_APP_FIREBASE_RTDB_URL
@@ -17,6 +13,13 @@ const URL_FB = process.env.REACT_APP_FIREBASE_RTDB_URL
 const boxShadow = css`
     -webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.25); 
     box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.25);
+`;
+
+const UserContainer = styled.div`
+padding: .1em;
+margin: .1em;
+width: fit-content;
+border-radius:5px;
 `;
 
 const BaseDivs = css`
@@ -72,6 +75,14 @@ flex-direction: column;
 }
 `;
 
+const ChallengeContainer = styled.div`
+border: 1px solid #347FC4;
+padding: .5em;
+border-radius: 3px;
+white-space: pre-wrap;
+`;
+
+
 const ChatWrapper = styled.div`
 ${BaseDivs}
 grid-row:  1 /span 2 ;
@@ -93,22 +104,6 @@ padding: .4em;
 border-radius: 3px;
 
 `;
-
-const UserContainer = styled.div`
-padding: .1em;
-margin: .1em;
-width: fit-content;
-border-radius:5px;
-
-`;
-
-const ChallengeContainer = styled.div`
-border: 1px solid #347FC4;
-padding: .5em;
-border-radius: 3px;
-white-space: pre-wrap;
-`
-// place-items: center;
 
 
 function StudentChallengePage({theme}) {
@@ -232,8 +227,6 @@ console.log(theme)
     })}
   }
 
-
-
 if(!currentRoom || validSession == false){
   return <DoesNotExist displayTitle="This room does not exist!" displayText="Please ensure you have the correct URL from your instructor"/>
 }else if(challengeLock === true && !challengeSubmitted){
@@ -274,8 +267,6 @@ if(!currentRoom || validSession == false){
 }else{
   return <ChallengeLoader loadingText='Checking Challenge Status' />
 }
-
-
 }
 
 export{ StudentChallengePage}

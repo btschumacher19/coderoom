@@ -204,9 +204,9 @@ const SamplePage = ({ theme, user, history }) => {
     });
   };
 
-  const addChallenge = (challenge) => {
+  const addChallenge = async (challenge) => {
     try {
-      postToServer("challenges", {
+      await postToServer("challenges", {
         title: challenge.title,
         description: challenge.description,
         language: challenge.language,

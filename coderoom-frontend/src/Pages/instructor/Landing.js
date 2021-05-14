@@ -80,9 +80,7 @@ const Logo = styled.img`
 
   @media only screen and (max-width: 700px) {
     width: 200px;
-    height: auto;
-    min-height: fit-content;
-  
+    height: 200px;
    }
 `;
 
