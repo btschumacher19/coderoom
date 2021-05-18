@@ -1,5 +1,5 @@
 <div align="center">
-  # [CodeRoom](https://coderoom.us/)
+<h1><a href="https://coderoom.us/">CodeRoom</a></h1>
 
 ![Demo](demo/demo.png)
 
