@@ -12,6 +12,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - [React-Router](https://reactrouter.com/)
   - [Material-UI](https://material-ui.com/)
   - [Styled-Components](https://www.npmjs.com/package/styled-components)
+- [Django](https://www.djangoproject.com/start/)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Moment](https://momentjs.com/)
 - [Axios](https://github.com/axios/axios)
 - [Firepad](https://firepad.io/)
@@ -20,6 +22,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Judge0](https://judge0.com/)
 - [uuidv4](https://www.npmjs.com/package/uuidv4)
 - [Docker](https://www.docker.com/get-started)
+- [Certbot](https://certbot.eff.org)
+- [Let's Encrypt](https://letsencrypt.org/)
+- [NGINX](https://www.nginx.com/)
 - [Google Compute Engine](https://cloud.google.com/compute)
 
 ## Backend
