@@ -1,4 +1,9 @@
-# [CodeRoom](https://coderoom.us/)
+<div align="center">
+  # [CodeRoom](https://coderoom.us/)
+
+![Demo](demo/demo.png)
+
+</div>
 
 CodeRoom is a project aimed at improving the learning experience for new developers. Created by four coding bootcamp graduates who saw a need for quick access to IDE's with preloaded coding challenges or lessons that could be worked in by groups or individuals in real-time in a remote setting.
 
